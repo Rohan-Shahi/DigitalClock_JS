@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body{
+            background-color: rgb(8 78 46 / 88%);
+        }
+
+        #clock{
+            color: #9fffb4;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .btn{
+            display: flex;
+           align-items: center;
+           flex-direction: column;
+          
+        }
+
+        .odd-even{
+            cursor: pointer;
+            padding: 1rem 1.5rem;
+            border-radius: 7px;
+            border: none;
+            background: rgb(21 64 56);
+            color: #efefef;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-family: 'Roboto', sans-serif;
+
+            
+        }
+
+        .odd-even:hover{
+            color:rgb(168, 255, 239);
+        }
+
+        #displayer{
+            color: #00bfb6;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        3 : 58 : 05 am
+    </div>
+
+    <div class="btn">
+        <button onclick="odd_even()" class="odd-even">Odd Or Even?</button>
+
+        <p id="displayer">Click Above Button</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
